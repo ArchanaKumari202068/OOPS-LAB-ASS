@@ -1,9 +1,8 @@
-//Program to make the use of inline function
+//Program to make the use of inline function.
 #include <iostream>
 using namespace std;
-
+// inline function is created
 inline int add(int num1,int num2){ 
-    // inline function
     return num1+num2;
 }
 
@@ -14,6 +13,7 @@ int main()
     cin>>a;
     cout<<"Enter number2: ";
     cin>>b;
+    //arg passed in function
     cout<<"Sum is "<<add(a,b);
 
     return 0;
