@@ -6,8 +6,11 @@
 #include <iostream>
 
 using namespace std;
+//class named square is created
 class square{
+  // Access modifier
   public:
+  // function power is created
       int power(double m,int n = 2){
           double result = 1;
           for(int i=0;i<n;i++){
@@ -18,10 +21,13 @@ class square{
 };
 int main()
 {
+  // Object is created
     square m1;
     cout<<"Result without passing exponent is \n";
+  //function is called
     cout<<m1.power(5);
     cout<<"\n Result is\n";
+  //function is called
     cout<<m1.power(5,4);
     
     return 0;
