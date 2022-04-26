@@ -1,4 +1,4 @@
-// Write a program to read a matrix of size mxn from the keyboard and display the name using function
+// Write a program to read a matrix of size mxn from the keyboard and display the name using function.
 #include <iostream>
 using namespace std;
 // class named matrix is created
