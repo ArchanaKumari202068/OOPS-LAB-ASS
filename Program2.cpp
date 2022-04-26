@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 
-inline int add(int num1,int num2){
+inline int add(int num1,int num2){ // inline function
     return num1+num2;
 }
 
