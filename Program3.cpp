@@ -1,7 +1,8 @@
-// Write a function power() which raise a number m to a power n.The function takes double 
+// Write a function power() which raise a number 
+//m to a power n.The function takes double 
 //value of m and integer value of n and returns the result.
-//Use a default value of n is 2 to make the function to calculate squares
-//  when this argument is omitted. 
+//Use a default value of n is 2 to make the function to
+//calculate squares when this argument is omitted. 
 
 #include <iostream>
 
