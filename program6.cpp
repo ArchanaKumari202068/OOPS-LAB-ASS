@@ -1,4 +1,5 @@
-// write a class STRING that can be used to store stings,add strings,equate string,output strings.
+// write a class STRING that can be used to 
+//store strings,add strings,equate string,output strings.
 #include <iostream>
 
 using namespace std;
