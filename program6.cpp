@@ -12,6 +12,7 @@ class Str{
                 i++;
             }
         }
+    //Storing a string using constructor
         Str(const char * string){
             length(string);
             str = new char[len];
@@ -20,6 +21,7 @@ class Str{
             }
             
         }
+    // function to add two strings
         void add(Str &str2){
             char * newStr = new char[len + str2.len -1];
             int i = 0;
@@ -32,6 +34,7 @@ class Str{
             delete []str;
             str = newStr;
         }
+    //Function to compare each character and equate
         bool equate(Str str2){
             if(len != str2.len) return false;
             for(int i=0;i<len;i++){
@@ -39,6 +42,7 @@ class Str{
             }
             return true;
         }
+    //this function displays strings
         void display(){
             int i = 0;
             while(str[i] != '\0')
