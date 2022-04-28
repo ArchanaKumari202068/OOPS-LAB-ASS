@@ -12,11 +12,13 @@ private:
     double centimeters = 0;
 
 public:
+    // parametrized constructor to intialize values
     DM(double mtrs, double cntmtrs)
     {
         setMeters(mtrs);
         setCentimeters(cntmtrs);
     }
+    // setter and getter functions
     double getMeters() { return meters; }
     double getCentimeters() { return centimeters; }
     void setMeters(double mtrs) { meters = mtrs; }
@@ -26,6 +28,7 @@ public:
         meters = meters + (int)centimeters / 100;
         centimeters = (int)centimeters % 100;
     }
+    //function to display values
     void display()
     {
         cout << meters << "mtrs, " << centimeters << "cms\n";
@@ -40,11 +43,13 @@ private:
     double inches = 0;
 
 public:
+    //constructor to initialize values
     DB(double ft, double inch)
     {
         setFeet(ft);
         setInches(inch);
     }
+    //setter and getter functions
     double getFeet() { return feet; }
     double getInches() { return inches; }
     void setFeet(double ft) { feet = ft; }
@@ -54,13 +59,15 @@ public:
         feet = feet + (int)inches / 12;
         inches = (int)inches % 12;
     }
+    // friend function to add objects two classes
     friend DM add(DM &dm, DB &db);
+    // function to display feets and inches
     void display()
     {
         cout << feet << "ft, " << inches << "inches\n";
     }
 };
-
+// definition of the function
 DM add(DM &dm, DB &db)
 {
     double newCM = db.inches * 2.54;
