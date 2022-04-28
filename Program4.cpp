@@ -1,14 +1,17 @@
-// Write a program to show that the effect of default arguments can alternatively achieved by overloading
+// Write a program to show that the effect of default 
+//arguments can alternatively achieved by overloading
 #include <iostream>
 using namespace std;
-
+//class named Maths is created
 class Maths{
   private:
   
   public:
+  //Members functions
   double power(double m,int n);
   double power(double m);
 };
+//Function definition for power
 double Maths::power(double m, int n){
     int result = 1;
     for(int i = 0;i<n;i++){
@@ -16,7 +19,7 @@ double Maths::power(double m, int n){
     }
     return result;
 }
-
+// Overloading Power Function 
 double Maths::power(double m){
     int n = 2;
     return power(m,n);
@@ -24,6 +27,7 @@ double Maths::power(double m){
 
 int main()
 {
+  // Object is created
     Maths m1;
     int base,exponent;
     cout<<"power function with only base value\n";
