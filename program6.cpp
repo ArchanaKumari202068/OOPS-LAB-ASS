@@ -1,6 +1,8 @@
+// write a class STRING that can be used to store stings,add strings,equate string,output strings.
 #include <iostream>
 
 using namespace std;
+//class Str is created
 class Str{
     public:
         char * str = NULL;
